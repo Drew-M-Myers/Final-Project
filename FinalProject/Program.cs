@@ -40,6 +40,11 @@ namespace finalProject
                         var disc = parsedBody.GetValue("disc");
 
                         var discClass = JsonConvert.DeserializeObject<Disc>(disc.ToString());
+                        if(!response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Information is currently unavaliable");
+                            continue;
+                        }
 
                         //Console.WriteLine(body); old way of priniting information. Lots of unnecessary info. 
                         Console.WriteLine($"Disc ID: {discClass.id}");

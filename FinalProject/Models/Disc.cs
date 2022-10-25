@@ -10,9 +10,9 @@ namespace FinalProject.Models
     {
         public int id { get; set; }
         public string name { get; set; }
-        public int speed { get; set; }  
-        public int glide { get; set; }    
-        public int turn { get; set; }
-        public int fade { get; set; }
+        public double speed { get; set; }  
+        public double glide { get; set; }    
+        public double turn { get; set; }
+        public double fade { get; set; }
     }
 }
